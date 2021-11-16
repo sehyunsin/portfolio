@@ -71,8 +71,8 @@ $(document).ready(function () {
 		//document.location.reload();
 	//};
 //리사이즈 새로고침2
-var areaHeight= $("nav").height();
-$("nav").css("nav",areaHeight);
+var areaHeight= $("profile").height();
+$("profile").css("profile",areaHeight);
 $(window).resize(function(){
 	location.reload();
 });
