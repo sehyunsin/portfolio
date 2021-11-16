@@ -75,6 +75,6 @@ $(document).ready(function () {
 //$("profile").css("profile",areaHeight);
 //$(window).resize(function(){
 	//location.reload();
-});
+//});
 
 }); //////////end
