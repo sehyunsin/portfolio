@@ -743,6 +743,9 @@ a.mockup_small_title {
 		float: left;
 		position: fixed;
 	}
+	#event>div>div {
+		width: 230pt;
+	}
 
 
 
