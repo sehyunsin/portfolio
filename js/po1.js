@@ -71,10 +71,10 @@ $(document).ready(function () {
 		//document.location.reload();
 	//};
 //리사이즈 새로고침2
-var areaHeight= $("profile").height();
-$("profile").css("profile",areaHeight);
-$(window).resize(function(){
-	location.reload();
+//var areaHeight= $("profile").height();
+//$("profile").css("profile",areaHeight);
+//$(window).resize(function(){
+	//location.reload();
 });
 
 }); //////////end
