@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Webpublisher sehyun's Portfolio</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/po1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+	<link rel="shortcut icon" href="images/gift.svg" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+	<link rel="stylesheet" href="css/po1.css">
+</head>
+
+<body>
+	<div class="open">
+		<div class="layer"></div>
+		<div class="layer"></div>
+	</div>
+	<header>
+		<button type="button">&#x2630</button>
+		<a v-bind:href="top">
+			<img :src="logo" :alt="alt">
+		</a>
+
+	</header>
+	<nav class="navmenu">
+		<div>
+			<div>
+				<a href="#top">Home</a>
+				<a href="#about">About</a>
+				<a href="#portfolio">Work</a>
+				<a href="#event">Design</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</div>
+	</nav>
+	<header id="top">
+		<div id="typing"></div>
+		<div id="scroll">
+			<i class="fas fa-chevron-down"></i>
+			<a href="#about">Scroll</a>
+		</div>
+	</header>
+	<section id="about" class="area">
+		<h2 class="hello">안녕하세요!<img src="images/hello.png"><br><span>창</span><span>의</span><span>적</span><span>이</span><span>고</span> <span>도</span><span>전</span><span>적</span><span>인</span> 웹퍼블리셔 신세현입니다.</h2>
+		<div class="skills">
+			<table>
+				<tr>
+					<td class="td1 color_ch" style="color:#4f7cf9; font-weight: bold;">Keep going</td>
+					<td>
+						<div class="pin2"></div>
+					</td>
+					<td class="td3">
+						<h2> 인프런 강의 듣기 / 매일 코딩스터디</h2>
+						<p>Html5, css, javascript, jquery, Vue. js, React<a href="https://github.com/sehyunsin" target="_blank">>>> GITHUB 바로가기</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td class="td1">2008 ~ 2015</td>
+					<td>
+						<div class="pin2"></div>
+					</td>
+					<td class="td3">
+						<h2>강원대학교 졸업</h2>
+						<p>공공행정학과 전공</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="td1">2018 ~ 2019</td>
+					<td>
+						<div class="pin2"></div>
+					</td>
+					<td class="td3">
+						<h2>모바일 플랫폼 서비스 회사 포레스트 창업</h2>
+						<p>소셜미디어 앱 'Bloom' 등 기획 및 디자인</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="td1">2021.07 ~ 11</td>
+					<td>
+						<div class="pin2"></div>
+					</td>
+					<td class="td3">
+						<h2>이젠 IT아카데미 UIUX 모바일 웹&앱 퍼블리셔 과정 수료</h2>
+						<p>Html5, css, javascript, jquery, Vue. js, Adobe Photoshop, illustrator, Pigma</p>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+		
+	</section>
+	<div id="portfolio" class="area">
+		<div id="cnt03">
+			<div class="page-wrap">
+				<div id="home-slider">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide-one">
+								<div class="swiper-image" data-swiper-parallax-y="-20%">
+									<div class="swiper-image-inner swiper-image-left swiper-image-one">
+										<a href="netflix/netflix.html" target="_blank">
+											<img src="images/go.png" alt="홈페이지 바로가기">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-image" data-swiper-parallax-y="35%">
+									<div class="swiper-image-inner swiper-image-right swiper-image-two">
+										<a href="netflix/netflix.html" class="paragraph mockup_title" target="_blank">
+											Netflix
+										</a>
+										<a href="netflix/netflix.html" class="paragraph  mockup_small_title"
+											target="_blank">
+											넷플릭스 반응형 웹사이트를<br>클론코딩하였습니다.
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-two">
+								<div class="swiper-image" data-swiper-parallax-y="-20%">
+									<div class="swiper-image-inner swiper-image-left swiper-image-three">
+										<a href="http://" target="_blank">
+											<img src="images/go.png" alt="페이지 바로가기">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-image" data-swiper-parallax-y="35%">
+									<div class="swiper-image-inner swiper-image-right swiper-image-four">
+										<a href="http://" class="paragraph mockup_title" target="_blank">
+											PetmeUp
+										</a>
+										<a href="http://" class="paragraph  mockup_small_title" target="_blank">
+											반려동물과의 만남부터 케어까지 모든<br>기능을 담은 어플리케이션 펫미업을<br>피그마로 제작하였습니다.
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-three">
+								<div class="swiper-image" data-swiper-parallax-y="-20%">
+									<div class="swiper-image-inner swiper-image-left swiper-image-five">
+										<a href="images/Bloom StoryBoard & DECISION.pdf" target="_blank">
+											<img src="images/go.png" alt="페이지 바로가기">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-image" data-swiper-parallax-y="35%">
+									<div class="swiper-image-inner swiper-image-right swiper-image-six">
+										<a href="images/Bloom StoryBoard & DECISION.pdf" class="paragraph mockup_title" target="_blank">
+											Bloom
+										</a>
+										<a href="images/Bloom StoryBoard & DECISION.pdf" class="paragraph  mockup_small_title"
+											target="_blank">
+											포레스트 창업 당시 제작한 소셜미디어 어플리케이션 Bloom의 기획안입니다.
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-four">
+								<div class="swiper-image" data-swiper-parallax-y="-20%">
+									<div class="swiper-image-inner swiper-image-left swiper-image-seven">
+										<a href="hanwoori/hanwoori.html" target="_blank">
+											<img src="images/go.png" alt="페이지 바로가기">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-image" data-swiper-parallax-y="35%">
+									<div class="swiper-image-inner swiper-image-right swiper-image-eigh">
+										<a href="hanwoori/hanwoori.html" class="paragraph mockup_title" target="_blank">
+											한우리
+										</a>
+										<a href="hanwoori/hanwoori.html" class="paragraph  mockup_small_title"
+											target="_blank">
+											한정식 한우리 반응형 웹사이트
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="swiper-slide swiper-slide-two">
+								<div class="swiper-image" data-swiper-parallax-y="-20%">
+									<div class="swiper-image-inner swiper-image-left swiper-image-eleven">
+										<a href="http://" target="_blank">
+											<img src="images/go.png" alt="페이지 바로가기">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-image" data-swiper-parallax-y="35%">
+									<div class="swiper-image-inner swiper-image-right swiper-image-twelve">
+										<a href="http://" class="paragraph mockup_title" target="_blank">
+											Vans
+										</a>
+										<a href="http://" class="paragraph  mockup_small_title" target="_blank">
+										Vans 홈페이지를 리뉴얼 하여 반응형<br>웹사이트로 제작하였습니다.
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-two">
+								<div class="swiper-image" data-swiper-parallax-y="-20%">
+									<div class="swiper-image-inner swiper-image-left swiper-image-thirteen">
+										<a href="회원가입/index.html" target="_blank">
+											<img src="images/go.png" alt="페이지 바로가기">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-image" data-swiper-parallax-y="35%">
+									<div class="swiper-image-inner swiper-image-right swiper-image-fourteen">
+										<a href="회원가입/index.html" class="paragraph mockup_title" target="_blank">
+											Naver
+										</a>
+										<a href="회원가입/index.html" class="paragraph  mockup_small_title" target="_blank">
+										네이버 반응형 회원가입 웹사이트를 클론코딩 하였습니다.
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<section id="event" class="area">
+		<div>
+			<div>
+				<img src="images/event-19.jpg" alt="CU 삼성증권통장">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-16.jpg" alt="한번 더 룰렛을 돌려라">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-9.jpg" alt="우주 라이크 서울">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-13.jpg" alt="블랙버스터">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			
+			<div>
+				<img src="images/event-8.jpg" alt="출석체크하면 산타가 와요">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-17.jpg" alt="봄 페스티벌">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			
+		
+
+		</div>
+	</section>
+	<section id="contact" class="area">
+		<div class="footer">
+			<section class="profile">
+				<div class="p1">
+					<p><b>Name</b> / shin sehyun</p>
+					<p><b>E-mail</b> / sehyunsin@naver.com</p>
+					<a href="https://github.com/sehyunsin" target="_blank" style="color:black"><b>Github </b>/
+						https://github.com/sehyunsin </a>
+						<p><b>Phone</b> / 010-5192-6117</p>
+				</div>
+				<div class="pdf">
+						<a href="https://www.miricanvas.com/v/1oxffx" target="_blank"><img src="images/pdf.png" alt="자기소개서 pdf 다운로드"></a>
+						<a href="https://www.miricanvas.com/v/1oxffx" target="_blank"><img src="images/qr1.png" alt="qr이력서"></a>
+				</div>
+				</section>
+		</div>
+		<section class="me">
+			© Shin Se Hyun portfolio 2021
+		</section>
+	</section>
+	<section id="popup">
+		<h3>제목</h3>
+		<img src="#" alt="#">
+	</section>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js'></script>
+<script>
+	let mySwiper = new Swiper(".swiper-container", {
+		direction: "vertical",
+		loop: true,
+		pagination: ".swiper-pagination",
+		grabCursor: true,
+		speed: 1000,
+		paginationClickable: true,
+		parallax: false,
+		autoplay: false,
+		effect: "slide",
+		mousewheelControl: 1
+	});
+</script>
+<script>
+	var logo = new Vue({
+		el: "header",
+		data: {
+			logo: "images/logo_sh.png",
+			alt: "logo",
+			top: "#"
+		}
+	});
+</script>
+
+</html>
