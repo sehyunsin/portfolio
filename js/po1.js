@@ -74,7 +74,7 @@ $(document).ready(function () {
 var areaHeight= $("pdf img").height();
 $("pdf img").css("pdf img",areaHeight);
 $(window).resize(function(){
-	//location.reload();
+	location.reload();
 });
 
 }); //////////end
