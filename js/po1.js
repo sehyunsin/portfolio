@@ -71,10 +71,10 @@ $(document).ready(function () {
 		//document.location.reload();
 	//};
 //리사이즈 새로고침2
-var areaHeight= $("pdf img").height();
-$("pdf img").css("pdf img",areaHeight);
-$(window).resize(function(){
-	location.reload();
-});
+//var areaHeight= $("pdf img").height();
+//$("pdf img").css("pdf img",areaHeight);
+//$(window).resize(function(){
+	//location.reload();
+//});
 
 }); //////////end
