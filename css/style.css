@@ -185,6 +185,15 @@ canvas { display: block; }
     .guide-Img img {
         height: 30px;
     }
+    .star-zone {
+        width: 16px;
+        height: 16px;
+        transform: scale(1) !important;
+    }
+    .star-zone svg {
+        width: 16px;
+        height: 16px;
+    }
 }
 @media (max-width: 768px) {
     #mobileControls { display: flex; flex-direction: column; align-items: center; }
