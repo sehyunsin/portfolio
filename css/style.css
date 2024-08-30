@@ -179,6 +179,12 @@ canvas { display: block; }
         width: 250px;
         height: 350px;
     }
+    .guide-Img {
+        top: 3%;
+    }
+    .guide-Img img {
+        height: 30px;
+    }
 }
 @media (max-width: 768px) {
     #mobileControls { display: flex; flex-direction: column; align-items: center; }
