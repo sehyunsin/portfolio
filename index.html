@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sehyun portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <!-- 게임 화면을 표시할 캔버스 -->
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- 프로젝트 상세 정보를 표시하는 모달 창 -->
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- 채팅창 컨테이너 -->
+    <div id="chatContainer">
+        <div id="chatMessages"></div>
+        <div id="chatInput">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- 배경 음악 설정 -->
+    <audio id="bgMusic" loop>
+        <source src="bgm/bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- 음악 제어 버튼 -->
+    <div id="musicControls" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+        <button id="musicToggle">🔇</button>
+    </div>
+
+    <div class="guide-Img">
+        <img src="img/guide.png" alt="Guide_Image">
+    </div>
+
+    <!-- 모바일 컨트롤 버튼들 -->
+    <div id="mobileControls">
+        <button id="upButton">⬆️</button>
+        <div>
+            <button id="leftButton">⬅️</button>
+            <button id="rightButton">➡️</button>
+        </div>
+        <button id="downButton">⬇️</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
