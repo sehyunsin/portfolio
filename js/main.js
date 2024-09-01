@@ -68,67 +68,67 @@ const zones = [
     // 각각의 프로젝트와 연관된 영역들 설정
     {
         x: 200, y: 200, size: 60,
-        title: 'JavaScript Project',
+        title: 'Awesome Css',
         content: 'This is my awesome JavaScript project!',
         description: 'In this project, I developed a dynamic web application using vanilla JavaScript. It showcases my ability to manipulate the DOM, handle events, and create interactive user interfaces without relying on external libraries.',
-        image: 'https://example.com/js-project-image.jpg',
-        link: 'https://example.com/js-project'
+        image: '/img/css_skill.png',
+        link: 'https://sehyunsin.github.io/Awesome_Css/'
     },
     {
         x: baseWidth - 300, y: 200, size: 60,
-        title: 'React Project',
+        title: 'pluseed',
         content: 'Check out my React skills here!',
         description: 'This React-based project demonstrates my proficiency in building modern, component-based user interfaces. It utilizes React hooks, context API for state management, and integrates with a RESTful backend.',
         image: 'https://example.com/react-project-image.jpg',
-        link: 'https://example.com/react-project'
+        link: 'https://pluseed.com/main/pc/ko/main'
     },
     {
         x: 200, y: baseHeight - 300, size: 60,
-        title: 'Node.js Project',
+        title: '자사 홈페이지 리뉴얼',
         content: 'Backend magic happens here!',
         description: 'This Node.js project showcases my backend development skills. It includes RESTful API design, database integration with MongoDB, and implementation of authentication and authorization.',
         image: 'https://example.com/nodejs-project-image.jpg',
-        link: 'https://example.com/nodejs-project'
+        link: 'https://sehyunsin.github.io/aitn_re/'
     },
     {
         x: baseWidth - 300, y: baseHeight - 300, size: 60,
-        title: 'HTML/CSS Project',
+        title: '자사몰',
         content: 'Beautiful designs created here!',
         description: 'This project highlights my frontend design skills using HTML5 and CSS3. It features responsive layouts, CSS animations, and adheres to modern web design principles.',
         image: 'https://example.com/html-css-project-image.jpg',
-        link: 'https://example.com/html-css-project'
+        link: 'https://www.metaformula.co.kr/main/index'
     },
     {
         x: baseWidth / 2, y: 200, size: 60,
-        title: 'Python Project',
+        title: 'AI Bird',
         content: 'Explore my Python skills!',
         description: 'This Python project demonstrates my ability to work with data processing and analysis. It includes usage of libraries like Pandas and NumPy, and visualizations created with Matplotlib.',
         image: 'https://example.com/python-project-image.jpg',
-        link: 'https://example.com/python-project'
+        link: 'https://www.aibirdinfo.com/main/index'
     },
     {
         x: baseWidth / 2, y: baseHeight - 300, size: 60,
-        title: 'Mobile App',
+        title: 'FITTING ME',
         content: 'Check out my mobile app development!',
         description: 'This mobile app, developed using React Native, showcases my ability to create cross-platform mobile applications. It features a clean UI, efficient state management, and integration with native device features.',
         image: 'https://example.com/mobile-app-image.jpg',
-        link: 'https://example.com/mobile-app'
+        link: 'https://ohmyfashion.ai/index.php'
     },
     {
         x: 200, y: baseHeight / 2, size: 60,
-        title: 'Data Visualization',
+        title: 'LOPAI',
         content: 'Interactive data visualizations!',
         description: 'This project focuses on creating interactive data visualizations using D3.js. It demonstrates my ability to transform complex datasets into meaningful and visually appealing representations.',
         image: 'https://example.com/data-viz-image.jpg',
-        link: 'https://example.com/data-viz'
+        link: 'https://lopai.net/main/index'
     },
     {
         x: baseWidth - 300, y: baseHeight / 2, size: 60,
-        title: 'Machine Learning',
+        title: 'OBD',
         content: 'AI and ML projects showcase',
         description: 'This machine learning project demonstrates my skills in AI and data science. It includes implementation of various ML algorithms, data preprocessing, and model evaluation techniques using Python and scikit-learn.',
         image: 'https://example.com/ml-project-image.jpg',
-        link: 'https://example.com/ml-projects'
+        link: 'https://denomicsobd.com/'
     }
 ];
 
