@@ -60,7 +60,7 @@ const player = {
     x: baseWidth / 2,
     y: baseHeight / 2,
     size: 160,
-    speed: 20
+    speed: 60
 };
 
 // 인터랙션 존 설정
