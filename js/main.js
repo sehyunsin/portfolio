@@ -71,7 +71,7 @@ const zones = [
         title: 'Awesome Css',
         content: 'This is my awesome JavaScript project!',
         description: 'In this project, I developed a dynamic web application using vanilla JavaScript. It showcases my ability to manipulate the DOM, handle events, and create interactive user interfaces without relying on external libraries.',
-        image: '/img/css_skill.png',
+        image: 'img/css_skill.png',
         link: 'https://sehyunsin.github.io/Awesome_Css/'
     },
     {
