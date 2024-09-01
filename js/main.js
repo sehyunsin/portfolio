@@ -60,7 +60,7 @@ const player = {
     x: baseWidth / 2,
     y: baseHeight / 2,
     size: 160,
-    speed: 60
+    speed: 20
 };
 
 // 인터랙션 존 설정
@@ -83,15 +83,15 @@ const zones = [
         link: 'https://pluseed.com/main/pc/ko/main'
     },
     {
-        x: baseWidth - 200, y: 200, size: 60,
+        x: baseWidth / 1.55, y: 130, size: 60,
         title: '나의 PROFILE',
         content: '저의 프로필 노션 웹사이트 입니다!',
         description: '이 웹사이트는 HTML과 CSS를 사용하여 메타포뮬러의 영양제 PLUSEED의 정보를 제공하는 반응형 페이지를 구현했습니다. CSS Flexbox를 활용하여 레이아웃을 구성했고, 클래스 기반의 스타일링으로 재사용성을 높였습니다. jQuery를 사용하여 동적 요소와 사용자 인터랙션을 구현했으며, 외부 리소스(YouTube)를 임베드하여 콘텐츠를 풍부하게 만들었습니다. 반응형 디자인과 영어 지원을 통해 사용자 접근성을 개선했으며, 전체적으로 브랜드 이미지와 제품 정보를 효과적으로 전달하기 위해 노력 했습니다.',
-        image: 'img/pluseed.png',
+        image: 'img/sehyun.png',
         link: 'https://pluseed.com/main/pc/ko/main'
     },
     {
-        x: 200, y: baseHeight - 300, size: 60,
+        x: 320, y: baseHeight - 300, size: 60,
         title: '에이아이더뉴트리진 홈페이지 리뉴얼',
         content: '에이아이더뉴트리진 회사 홍보 웹사이트 제작',
         description: '이 프로젝트는 에이아이더뉴트리진 이라는 회사 홍보 웹사이트로, 현대적인 웹 개발 기술을 활용하여 사용자 경험을 극대화했습니다. jQuery와 Fullpage.js를 기반으로 단일 페이지 애플리케이션(SPA)을 구현하여 부드러운 페이지 전환 효과를 만들었습니다.특히 Swiper 라이브러리를 사용한 동적 슬라이더와 JavaScript를 활용한 실시간 콘텐츠 업데이트 기능을 통해 사용자 인터랙션을 강화했습니다. 또한, CSS를 효과적으로 활용하여 반응형 디자인을 적용함으로써 다양한 디바이스에서의 일관된 사용자 경험을 보장했습니다.멀티미디어 요소의 통합, 특히 유튜브 영상 임베딩을 통해 콘텐츠의 풍부성을 높였으며, 전체적으로 기업의 브랜드 이미지를 효과적으로 전달할 수 있는 인터페이스를 구현했습니다.',
@@ -99,7 +99,7 @@ const zones = [
         link: 'https://sehyunsin.github.io/aitn_re/'
     },
     {
-        x: baseWidth - 300, y: baseHeight - 300, size: 60,
+        x: baseWidth - 280, y: baseHeight - 250, size: 60,
         title: '메타포뮬러 쇼핑몰',
         content: '메타포뮬러 쇼핑몰 유지 보수 및 운영',
         description: '메타포뮬러라는 기존에 제작 되어 있는 쇼핑몰 웹사이트의 각종 이벤트나 팝업 상세페이지 웹사이트의 변경 등과 게시물 관리 및 php를 이용한 회원의 이용 관리 등의 유지 보수 및 운영을 하였습니다.',
@@ -107,34 +107,34 @@ const zones = [
         link: 'https://www.metaformula.co.kr/main/index'
     },
     {
-        x: baseWidth / 2, y: 200, size: 60,
+        x: baseWidth / 2.5, y: 200, size: 60,
         title: 'AI Bird',
-        content: 'Explore my Python skills!',
-        description: 'This Python project demonstrates my ability to work with data processing and analysis. It includes usage of libraries like Pandas and NumPy, and visualizations created with Matplotlib.',
+        content: '건강기능식품 원료 논문 및 정보 웹사이트',
+        description: '이 프로젝트는 건강기능식품 원료 정보와 관련 서비스를 제공하는 웹 플랫폼을 구현했습니다. jQuery를 기반으로 하여 사용자 인터페이스를 구축했으며, 검색 기능과 카테고리별 정보 제공에 중점을 두었습니다. CSS를 활용한 반응형 디자인으로 다양한 디바이스에 대응하며, 특히 메인 페이지에서는 그리드 레이아웃을 통해 주요 서비스를 효과적으로 소개하고 있습니다.또한, 외부 라이브러리인 jqCloud, ECharts, ApexCharts 등을 활용하여 데이터 시각화 기능을 강화했습니다. SweetAlert 라이브러리를 통해 사용자 친화적인 알림 시스템을 구현했으며, AJAX를 이용한 비동기 데이터 로딩으로 페이지 성능을 최적화했습니다.전체적으로 이 웹사이트는 기능성 원료 정보 검색, 신흥 원료 정보 제공, 그리고 비즈니스 매칭 서비스라는 세 가지 주요 기능을 중심으로 구성하였으며, 사용자 경험과 정보 접근성을 고려한 하여 설계하였습니다.',
         image: 'img/aibird.png',
         link: 'https://www.aibirdinfo.com/main/index'
     },
     {
-        x: baseWidth / 2, y: baseHeight - 300, size: 60,
+        x: baseWidth / 1.65, y: baseHeight - 170, size: 60,
         title: 'FITTING ME',
-        content: 'Check out my mobile app development!',
-        description: 'This mobile app, developed using React Native, showcases my ability to create cross-platform mobile applications. It features a clean UI, efficient state management, and integration with native device features.',
+        content: '자신의 이미지를 업로드 하여 가상 피팅 AI서비스 홍보 웹사이트',
+        description: '이 프로젝트는 가상 피팅 서비스를 제공하는 테크 기업의 웹사이트를 구현했습니다. jQuery와 순수 JavaScript를 활용하여 동적인 사용자 인터페이스를 구축했으며, 반응형 웹 디자인을 적용하여 다양한 디바이스에 대응하고 있습니다. Slick 슬라이더와 AOS(Animate On Scroll) 라이브러리를 사용하여 시각적으로 매력적인 애니메이션 효과를 구현했습니다. CSS 미디어 쿼리를 활용하여 모바일과 데스크톱 버전의 레이아웃을 효과적으로 분리했습니다.',
         image: 'img/fitting.png',
         link: 'https://ohmyfashion.ai/index.php'
     },
     {
         x: 200, y: baseHeight / 2, size: 60,
         title: 'LOPAI',
-        content: 'Interactive data visualizations!',
-        description: 'This project focuses on creating interactive data visualizations using D3.js. It demonstrates my ability to transform complex datasets into meaningful and visually appealing representations.',
+        content: '모바일용 건강 진단 키트 결과 확인 플랫폼',
+        description: '이 프로젝트는 모바일 기기에 최적화된 건강 진단 키트 선택 및 결과 확인 플랫폼을 구현했습니다. jQuery와 Swiper 라이브러리를 활용하여 사용자 친화적인 인터페이스를 구축했으며, ApexCharts와 ECharts를 통해 데이터 시각화 기능을 강화했습니다.특히 반응형 디자인을 적용하여 다양한 모바일 기기에서의 일관된 사용자 경험을 제공하고 있습니다. CSS Flexbox를 이용한 레이아웃 구성과 SVG 아이콘 사용으로 모던하고 깔끔한 디자인을 실현했습니다.또한 SweetAlert 라이브러리를 통해 사용자 친화적인 알림 시스템을 구현했고, AJAX를 이용한 비동기 데이터 로딩으로 페이지 성능을 최적화했습니다. 햄버거 메뉴와 하단 네비게이션 바를 통해 모바일에서의 편리한 네비게이션을 제공하며, 로그인 상태에 따른 조건부 렌더링을 통해 개인화된 경험을 제공합니다. 이 웹 애플리케이션은 건강 진단 키트 선택, 진단 결과 확인, 그리고 맞춤형 건강 관리 서비스라는 주요 기능을 중심으로 구성되어 있으며, 모바일 환경에 최적화된 사용자 경험과 인터페이스로 설계 하였습니다.',
         image: 'img/lopai.png',
         link: 'https://lopai.net/main/index'
     },
     {
         x: baseWidth - 300, y: baseHeight / 2, size: 60,
         title: 'OBD',
-        content: 'AI and ML projects showcase',
-        description: 'This machine learning project demonstrates my skills in AI and data science. It includes implementation of various ML algorithms, data preprocessing, and model evaluation techniques using Python and scikit-learn.',
+        content: '구강 마이크로바이옴 분석 서비스를 제공하는 기업 웹사이트',
+        description: '이 프로젝트는 구강 마이크로바이옴 분석 서비스를 제공하는 기업의 웹사이트를 구현했습니다. jQuery와 Fullpage.js를 활용하여 단일 페이지 애플리케이션(SPA) 형태의 인터랙티브한 웹사이트를 구축했으며, AOS(Animate On Scroll) 라이브러리를 통해 스크롤 기반 애니메이션 효과를 적용했습니다.Swiper 슬라이더를 이용한 제품 소개, 네이버 맵 API를 활용한 위치 정보 제공, 그리고 모달 팝업을 통한 약관 및 개인정보 처리방침 표시 등 다양한 기능을 구현했습니다. CSS를 활용한 반응형 디자인으로 다양한 디바이스에 대응하고 있으며, 스크롤에 따른 헤더 변화와 같은 세부적인 UI/UX 요소들도 고려되었습니다.또한 SEO를 위한 메타 태그 최적화와 오픈 그래프 프로토콜 적용으로 소셜 미디어 공유 시 최적화된 미리보기를 제공합니다. 이 웹사이트는 회사의 주요 서비스와 제품 정보를 명확하게 전달하면서도 사용자 경험을 중요시하는 디자인을 채택했습니다. 스크롤 기반의 단일 페이지 구조로 정보를 쉽게 탐색할 수 있게 하고, 적절한 애니메이션 효과로 시각적 흥미를 더했습니다.',
         image: 'img/obd.png',
         link: 'https://denomicsobd.com/'
     }
