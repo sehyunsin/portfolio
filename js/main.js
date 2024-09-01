@@ -69,32 +69,40 @@ const zones = [
     {
         x: 200, y: 200, size: 60,
         title: 'Awesome Css',
-        content: 'This is my awesome JavaScript project!',
-        description: 'In this project, I developed a dynamic web application using vanilla JavaScript. It showcases my ability to manipulate the DOM, handle events, and create interactive user interfaces without relying on external libraries.',
+        content: 'CSS와 JavaScript로 그린 우주 천체 시뮬레이션',
+        description: '이 프로젝트는 CSS와 JavaScript를 사용하여 인터랙티브한 우주 테마 웹페이지를 구현했습니다. CSS keyframe 애니메이션으로 다양한 우주 요소들의 움직임을 표현했고, JavaScript로 동적 요소 생성과 스크롤 기반 인터랙션을 구현했습니다. ',
         image: 'img/css_skill.png',
         link: 'https://sehyunsin.github.io/Awesome_Css/'
     },
     {
         x: baseWidth - 300, y: 200, size: 60,
-        title: 'pluseed',
-        content: 'Check out my React skills here!',
-        description: 'This React-based project demonstrates my proficiency in building modern, component-based user interfaces. It utilizes React hooks, context API for state management, and integrates with a RESTful backend.',
-        image: 'img/pluseed',
+        title: '메타포뮬러 영양제 PLUSEED',
+        content: '제품 홍보 웹사이트 제작',
+        description: '이 웹사이트는 HTML과 CSS를 사용하여 메타포뮬러의 영양제 PLUSEED의 정보를 제공하는 반응형 페이지를 구현했습니다. CSS Flexbox를 활용하여 레이아웃을 구성했고, 클래스 기반의 스타일링으로 재사용성을 높였습니다. jQuery를 사용하여 동적 요소와 사용자 인터랙션을 구현했으며, 외부 리소스(YouTube)를 임베드하여 콘텐츠를 풍부하게 만들었습니다. 반응형 디자인과 영어 지원을 통해 사용자 접근성을 개선했으며, 전체적으로 브랜드 이미지와 제품 정보를 효과적으로 전달하기 위해 노력 했습니다.',
+        image: 'img/pluseed.png',
+        link: 'https://pluseed.com/main/pc/ko/main'
+    },
+    {
+        x: baseWidth - 200, y: 200, size: 60,
+        title: '나의 PROFILE',
+        content: '저의 프로필 노션 웹사이트 입니다!',
+        description: '이 웹사이트는 HTML과 CSS를 사용하여 메타포뮬러의 영양제 PLUSEED의 정보를 제공하는 반응형 페이지를 구현했습니다. CSS Flexbox를 활용하여 레이아웃을 구성했고, 클래스 기반의 스타일링으로 재사용성을 높였습니다. jQuery를 사용하여 동적 요소와 사용자 인터랙션을 구현했으며, 외부 리소스(YouTube)를 임베드하여 콘텐츠를 풍부하게 만들었습니다. 반응형 디자인과 영어 지원을 통해 사용자 접근성을 개선했으며, 전체적으로 브랜드 이미지와 제품 정보를 효과적으로 전달하기 위해 노력 했습니다.',
+        image: 'img/pluseed.png',
         link: 'https://pluseed.com/main/pc/ko/main'
     },
     {
         x: 200, y: baseHeight - 300, size: 60,
-        title: '자사 홈페이지 리뉴얼',
-        content: 'Backend magic happens here!',
-        description: 'This Node.js project showcases my backend development skills. It includes RESTful API design, database integration with MongoDB, and implementation of authentication and authorization.',
+        title: '에이아이더뉴트리진 홈페이지 리뉴얼',
+        content: '에이아이더뉴트리진 회사 홍보 웹사이트 제작',
+        description: '이 프로젝트는 에이아이더뉴트리진 이라는 회사 홍보 웹사이트로, 현대적인 웹 개발 기술을 활용하여 사용자 경험을 극대화했습니다. jQuery와 Fullpage.js를 기반으로 단일 페이지 애플리케이션(SPA)을 구현하여 부드러운 페이지 전환 효과를 만들었습니다.특히 Swiper 라이브러리를 사용한 동적 슬라이더와 JavaScript를 활용한 실시간 콘텐츠 업데이트 기능을 통해 사용자 인터랙션을 강화했습니다. 또한, CSS를 효과적으로 활용하여 반응형 디자인을 적용함으로써 다양한 디바이스에서의 일관된 사용자 경험을 보장했습니다.멀티미디어 요소의 통합, 특히 유튜브 영상 임베딩을 통해 콘텐츠의 풍부성을 높였으며, 전체적으로 기업의 브랜드 이미지를 효과적으로 전달할 수 있는 인터페이스를 구현했습니다.',
         image: 'img/aithe_re.png',
         link: 'https://sehyunsin.github.io/aitn_re/'
     },
     {
         x: baseWidth - 300, y: baseHeight - 300, size: 60,
-        title: '자사몰',
-        content: 'Beautiful designs created here!',
-        description: 'This project highlights my frontend design skills using HTML5 and CSS3. It features responsive layouts, CSS animations, and adheres to modern web design principles.',
+        title: '메타포뮬러 쇼핑몰',
+        content: '메타포뮬러 쇼핑몰 유지 보수 및 운영',
+        description: '메타포뮬러라는 기존에 제작 되어 있는 쇼핑몰 웹사이트의 각종 이벤트나 팝업 상세페이지 웹사이트의 변경 등과 게시물 관리 및 php를 이용한 회원의 이용 관리 등의 유지 보수 및 운영을 하였습니다.',
         image: 'img/meta.png',
         link: 'https://www.metaformula.co.kr/main/index'
     },
@@ -368,9 +376,9 @@ const keywords = {
     "성향": "제 성향은 개방적이고 친화력이 좋으며, 객관적인 분석 능력과 창의력을 겸비하고 있습니다.",
     "사고방식": "저는 개방적이고 부드러운 사고방식을 가지고 있으며, 창의적이고 분석적인 면이 강합니다.",
 
-    "목표": "제 목표는 풍족하고 평온한 노후를 보내는 것입니다.",
-    "미래": "저의 미래 목표는 풍족하고 평온한 노후를 보내는 것입니다.",
-    "비전": "저는 평온하고 풍족한 노후를 목표로 하고 있습니다.",
+    "목표": "제 목표는 풍족하고 평온한 노후를 보내는 것입니다. 그리고 책임감 있는 어른이 되는 것 입니다.",
+    "미래": "저의 미래 목표는 풍족하고 평온한 노후를 보내는 것입니다. 그리고 책임감 있는 어른이 되는 것 입니다.",
+    "비전": "저는 평온하고 풍족한 노후를 목표로 하고 있습니다. 그리고 책임감 있는 어른이 되는 것 입니다.",
 
     "꿈": "저의 꿈은 훗날 작가가 되는 것입니다.",
     "희망": "저는 훗날 작가가 되는 것을 꿈꾸고 있습니다.",
