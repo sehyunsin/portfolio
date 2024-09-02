@@ -85,8 +85,8 @@ const zones = [
     {
         x: baseWidth / 1.55, y: 130, size: 60,
         title: '나의 PROFILE',
-        content: '저의 노션 프로필 웹사이트 입니다!',
-        description: '간략한 저의 신상과 커리어 기술 스택과 프로젝트 등이 제공 됩니다. 감사합니다!',
+        content: '저의 노션 프로필 웹사이트 입니다.',
+        description: '간략한 저의 신상과 커리어 기술 스택과 프로젝트 등이 제공 됩니다.',
         image: 'img/sehyun.png',
         link: 'https://silent-kiwi-674.notion.site/685b934cb252463a9f3b3360575ce4ff'
     },
@@ -99,14 +99,6 @@ const zones = [
         link: 'https://sehyunsin.github.io/aitn_re/'
     },
     {
-        x: baseWidth - 280, y: baseHeight - 250, size: 60,
-        title: '메타포뮬러 쇼핑몰',
-        content: '메타포뮬러 쇼핑몰 유지 보수 및 운영',
-        description: '메타포뮬러라는 기존에 제작 되어 있는 쇼핑몰 웹사이트의 각종 이벤트나 팝업 상세페이지 웹사이트의 변경 등과 게시물 관리 및 php를 이용한 회원의 이용 관리 등의 유지 보수 및 운영을 하였습니다.',
-        image: 'img/meta.png',
-        link: 'https://www.metaformula.co.kr/main/index'
-    },
-    {
         x: baseWidth / 2.5, y: 200, size: 60,
         title: 'AI Bird',
         content: '건강기능식품 원료 논문 및 정보 웹사이트',
@@ -115,15 +107,7 @@ const zones = [
         link: 'https://www.aibirdinfo.com/main/index'
     },
     {
-        x: baseWidth / 1.65, y: baseHeight - 170, size: 60,
-        title: 'FITTING ME',
-        content: '자신의 이미지를 업로드 하여 가상 피팅 AI서비스 홍보 웹사이트',
-        description: '이 프로젝트는 가상 피팅 서비스를 제공하는 테크 기업의 웹사이트를 구현했습니다. jQuery와 순수 JavaScript를 활용하여 동적인 사용자 인터페이스를 구축했으며, 반응형 웹 디자인을 적용하여 다양한 디바이스에 대응하고 있습니다. Slick 슬라이더와 AOS(Animate On Scroll) 라이브러리를 사용하여 시각적으로 매력적인 애니메이션 효과를 구현했습니다. CSS 미디어 쿼리를 활용하여 모바일과 데스크톱 버전의 레이아웃을 효과적으로 분리했습니다.',
-        image: 'img/fitting.png',
-        link: 'https://ohmyfashion.ai/index.php'
-    },
-    {
-        x: 200, y: baseHeight / 2, size: 60,
+        x: baseWidth / 1.75, y: baseHeight - 190, size: 60,
         title: 'LOPAI',
         content: '모바일용 건강 진단 키트 결과 확인 플랫폼',
         description: '이 프로젝트는 모바일 기기에 최적화된 건강 진단 키트 선택 및 결과 확인 플랫폼을 구현했습니다. jQuery와 Swiper 라이브러리를 활용하여 사용자 친화적인 인터페이스를 구축했으며, ApexCharts와 ECharts를 통해 데이터 시각화 기능을 강화했습니다.특히 반응형 디자인을 적용하여 다양한 모바일 기기에서의 일관된 사용자 경험을 제공하고 있습니다. CSS Flexbox를 이용한 레이아웃 구성과 SVG 아이콘 사용으로 모던하고 깔끔한 디자인을 실현했습니다.또한 SweetAlert 라이브러리를 통해 사용자 친화적인 알림 시스템을 구현했고, AJAX를 이용한 비동기 데이터 로딩으로 페이지 성능을 최적화했습니다. 햄버거 메뉴와 하단 네비게이션 바를 통해 모바일에서의 편리한 네비게이션을 제공하며, 로그인 상태에 따른 조건부 렌더링을 통해 개인화된 경험을 제공합니다. 이 웹 애플리케이션은 건강 진단 키트 선택, 진단 결과 확인, 그리고 맞춤형 건강 관리 서비스라는 주요 기능을 중심으로 구성되어 있으며, 모바일 환경에 최적화된 사용자 경험과 인터페이스로 설계 하였습니다.',
@@ -367,10 +351,10 @@ function handleTouchMove(e) {
     update(); 
 }
 
-// 채팅 메시지 추가 함수
+// 채팅 메시지 추가 함수 수정
 function addMessage(sender, message) {
     const messageElement = document.createElement('p');
-    messageElement.textContent = `${sender}: ${message}`;
+    messageElement.innerHTML = `${sender}: ${message.replace(/\n/g, '<br>')}`;
     chatMessages.appendChild(messageElement);
     chatMessages.scrollTop = chatMessages.scrollHeight;
 }
@@ -488,7 +472,10 @@ async function initialize() {
     update();  // 게임 화면 업데이트
     preloadImages();  // 프로젝트 이미지 프리로딩 추가
     // 채팅 시작 메시지 추가
-    addMessage('뉴비세현', "안녕하세요 [뉴비세현]의 포트폴리오 입니다~! 방향키를 움직여 별을 통해 저의 포트폴리오들을 감상해 주시고 저와 관련된 사항이나 궁금하신 질문 [EX : 이름,경력,연락처 등]의 키워드를 주시면 뉴비세현이가 친절히 대답해 드리겠습니다. 감사합니다!!");
+    addMessage(
+        '뉴비세현',
+        "안녕하세요 무엇이 궁금하신가요? 질문 또는 키워드를 입력해주세요(ex 이름, 경력, 연락처, MBTI 등)"
+    );
 }
 
 // 이벤트 리스너 등록
