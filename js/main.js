@@ -185,8 +185,20 @@ function createStarZones() {
         star.id = `star-${index}`;
         star.innerHTML = createStarSVG(zone.size);
         star.style.animation = `twinkle ${1 + Math.random()}s infinite`;
+        star.addEventListener('click', () => handleStarClick(index)); // 클릭 이벤트 추가
         gameContainer.appendChild(star);
     });
+}
+
+// 별 클릭 처리 함수
+function handleStarClick(index) {
+    const zone = zones[index];
+    const star = document.getElementById(`star-${index}`);
+    star.style.animation = 'reach 0.5s ease-in-out';
+    setTimeout(() => {
+        star.style.animation = `twinkle ${1 + Math.random()}s infinite`;
+    }, 500);
+    openModal(zone.title, zone.content, zone.description, zone.image, zone.link);
 }
 
 // 별 위치 업데이트 함수
@@ -217,12 +229,25 @@ function checkCollision() {
     let inZone = false;
     zones.forEach((zone, index) => {
         const star = document.getElementById(`star-${index}`);
-        if (
-            player.x < zone.x + zone.size &&
-            player.x + player.size > zone.x &&
-            player.y < zone.y + zone.size &&
-            player.y + player.size > zone.y
-        ) {
+        
+        // 캐릭터의 중심점 계산
+        const playerCenterX = player.x + player.size / 2;
+        const playerCenterY = player.y + player.size / 2;
+        
+        // 별의 중심점 계산
+        const starCenterX = zone.x + zone.size / 2;
+        const starCenterY = zone.y + zone.size / 2;
+        
+        // 중심점 간의 거리 계산
+        const distance = Math.sqrt(
+            Math.pow(playerCenterX - starCenterX, 2) + 
+            Math.pow(playerCenterY - starCenterY, 2)
+        );
+        
+        // 충돌 반경 (캐릭터와 별 크기의 평균 / 2)
+        const collisionRadius = (player.size + zone.size) / 4;
+        
+        if (distance < collisionRadius) {
             inZone = true;
             if (modal.style.display === 'none') {
                 star.style.animation = 'reach 0.5s ease-in-out';
@@ -233,6 +258,7 @@ function checkCollision() {
             }
         }
     });
+    
     // 모달이 열려있고 존에 있지 않을 때만 모달을 닫음
     if (!inZone && modal.style.display !== 'none') {
         closeModal();
@@ -272,6 +298,14 @@ window.onclick = function(event) {
     }
 }
 
+// 이미지 프리로딩 함수
+function preloadImages() {
+    zones.forEach(zone => {
+        const img = new Image();
+        img.src = zone.image;
+    });
+}
+
 // 키보드 입력 처리 함수
 function handleInput(e) {
     const move = player.speed / scale;
@@ -282,6 +316,29 @@ function handleInput(e) {
         case 'ArrowRight': player.x = Math.min(baseWidth - player.size, player.x + move); break;
     }
     update(); 
+}
+
+// 마우스 클릭 처리 함수
+function handleClick(event) {
+    const rect = canvas.getBoundingClientRect();
+    const clickX = (event.clientX - rect.left) / scale;
+    const clickY = (event.clientY - rect.top) / scale;
+
+    zones.forEach((zone, index) => {
+        if (
+            clickX >= zone.x && 
+            clickX <= zone.x + zone.size &&
+            clickY >= zone.y && 
+            clickY <= zone.y + zone.size
+        ) {
+            const star = document.getElementById(`star-${index}`);
+            star.style.animation = 'reach 0.5s ease-in-out';
+            setTimeout(() => {
+                star.style.animation = `twinkle ${1 + Math.random()}s infinite`;
+            }, 500);
+            openModal(zone.title, zone.content, zone.description, zone.image, zone.link);
+        }
+    });
 }
 
 // 터치 시작 위치 저장 함수
@@ -429,6 +486,7 @@ async function initialize() {
     createStarZones();  // 별 영역 생성
     resizeCanvas();  // 캔버스 크기 조정
     update();  // 게임 화면 업데이트
+    preloadImages();  // 프로젝트 이미지 프리로딩 추가
     // 채팅 시작 메시지 추가
     addMessage('뉴비세현', "안녕하세요 [뉴비세현]의 포트폴리오 입니다~! 방향키를 움직여 별을 통해 저의 포트폴리오들을 감상해 주시고 저와 관련된 사항이나 궁금하신 질문 [EX : 이름,경력,연락처 등]의 키워드를 주시면 뉴비세현이가 친절히 대답해 드리겠습니다. 감사합니다!!");
 }
@@ -437,6 +495,7 @@ async function initialize() {
 document.addEventListener('keydown', handleInput);
 canvas.addEventListener('touchstart', handleTouchStart, false);
 canvas.addEventListener('touchmove', handleTouchMove, false);
+canvas.addEventListener('click', handleClick, false);  // 클릭 이벤트 리스너 추가
 window.addEventListener('resize', () => {
     resizeCanvas();
     update();
