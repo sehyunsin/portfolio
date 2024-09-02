@@ -75,6 +75,7 @@ canvas { display: block; }
     .modal-content {
         width: 76%;
         margin: 10% auto;
+        height: 50%;
     }
     #chatContainer {
         width: 250px;
