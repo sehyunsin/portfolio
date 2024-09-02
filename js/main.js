@@ -85,10 +85,10 @@ const zones = [
     {
         x: baseWidth / 1.55, y: 130, size: 60,
         title: '나의 PROFILE',
-        content: '저의 프로필 노션 웹사이트 입니다!',
-        description: '이 웹사이트는 HTML과 CSS를 사용하여 메타포뮬러의 영양제 PLUSEED의 정보를 제공하는 반응형 페이지를 구현했습니다. CSS Flexbox를 활용하여 레이아웃을 구성했고, 클래스 기반의 스타일링으로 재사용성을 높였습니다. jQuery를 사용하여 동적 요소와 사용자 인터랙션을 구현했으며, 외부 리소스(YouTube)를 임베드하여 콘텐츠를 풍부하게 만들었습니다. 반응형 디자인과 영어 지원을 통해 사용자 접근성을 개선했으며, 전체적으로 브랜드 이미지와 제품 정보를 효과적으로 전달하기 위해 노력 했습니다.',
+        content: '저의 노션 프로필 웹사이트 입니다!',
+        description: '간략한 저의 신상과 커리어 기술 스택과 프로젝트 등이 제공 됩니다. 감사합니다!',
         image: 'img/sehyun.png',
-        link: 'https://pluseed.com/main/pc/ko/main'
+        link: 'https://silent-kiwi-674.notion.site/685b934cb252463a9f3b3360575ce4ff'
     },
     {
         x: 320, y: baseHeight - 300, size: 60,
