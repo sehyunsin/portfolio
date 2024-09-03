@@ -69,10 +69,10 @@ const zones = [
     {
         x: 200, y: 200, size: 60,
         title: 'Awesome Css',
-        content: 'CSS와 JavaScript로 그린 우주 천체 시뮬레이션',
-        description: '이 프로젝트는 CSS와 JavaScript를 사용하여 인터랙티브한 우주 테마 웹페이지를 구현했습니다. CSS keyframe 애니메이션으로 다양한 우주 요소들의 움직임을 표현했고, JavaScript로 동적 요소 생성과 스크롤 기반 인터랙션을 구현했습니다. ',
+        content: 'Vue.js를 통해 개발한 CSS와 JavaScript로 그린 우주 천체 시뮬레이션',
+        description: '이 프로젝트는 Vue.js, CSS, 그리고 JavaScript를 사용하여 개발된 인터랙티브 우주 테마 웹페이지입니다. CSS 키프레임 애니메이션을 활용해 다양한 천체들의 움직임을 시뮬레이션하여, 동적이고 시각적으로 매력적인 우주 장면을 구현했습니다. JavaScript는 동적 요소 생성과 스크롤 기반 인터랙션을 구현하여 사용자 경험을 더욱 풍부하게 합니다.',
         image: 'img/css_skill.png',
-        link: 'https://sehyunsin.github.io/Awesome_Css/'
+        link: 'https://sehyunsin.github.io/space-scene-project/'
     },
     {
         x: baseWidth - 300, y: 200, size: 60,
