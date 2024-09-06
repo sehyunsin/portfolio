@@ -107,6 +107,14 @@ const zones = [
         link: 'https://www.aibirdinfo.com/main/index'
     },
     {
+        x: baseWidth / 2, y: 200, size: 60,
+        title: 'Movie Project',
+        content: 'Next.js를 활용한 토이 프로젝트',
+        description: '이 프로젝트는 Next.js와 TypeScript를 기반으로 구현된 단일 페이지 애플리케이션(SPA)입니다. Tailwind CSS를 활용해 효율적으로 스타일을 적용하였으며, 반응형 디자인으로 다양한 기기에서 일관된 사용자 경험을 제공합니다. TypeScript를 사용해 코드의 안정성과 유지보수성을 높였고, Next.js의 서버 사이드 렌더링(SSR)을 통해 빠른 페이지 로딩 속도를 구현했습니다. 또한, 이미지와 스크립트는 성능 최적화를 위해 미리 로드되며, 사용자는 영화 검색 및 탐색 기능을 통해 사용자 친화적인 인터페이스를 경험할 수 있습니다.',
+        image: 'img/react1.png',
+        link: 'https://movie-mingle-ten.vercel.app/'
+    },
+    {
         x: baseWidth / 1.75, y: baseHeight - 190, size: 60,
         title: 'LOPAI',
         content: '모바일용 건강 진단 키트 결과 확인 플랫폼',
